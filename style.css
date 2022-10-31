@@ -1,4 +1,3 @@
-
 * {
   box-sizing: border-box;
 }
@@ -8,12 +7,17 @@ body {
   padding: 0 0 100px;
 }
 
-h1 {
+#awesomebookstitle {
   text-align: center;
 }
 
-h2 {
+#booklisttitle {
   text-align: center;
+}
+
+#addnewbooktitle {
+  text-align: center;
+  font-size: 14px;
 }
 
 #library {
@@ -22,10 +26,6 @@ h2 {
   margin-bottom: 40px;
   border-radius: 16px;
   padding: 25px 20px;
-}
-
-#library h2 {
-  font-size: 14px;
 }
 
 .empty {
