@@ -4,12 +4,8 @@ const booksSection = document.getElementById('library');
 const form = document.getElementById('form-id');
 const empty = document.getElementById('empty-id');
 
-function showEmpty() {
-  empty.classList.replace('hide', 'show');
-}
-
-function hideEmpty() {
-  empty.classList.replace('show', 'hide');
+function displayEmpty() {
+  empty.classList.toggle('hide');
 }
 
 let library = [];
@@ -30,25 +26,14 @@ class Book {
   };
 }
 
-const book1 = new Book(uid(), 'Html', 'Jack');
-const book2 = new Book(uid(), 'JavaScript', 'Jane');
-
-library.push(book1);
-library.push(book2);
-
-function toggleEmpty() {
-  if (!library.length) {
-    showEmpty();
-  } else {
-    hideEmpty();
-  }
-}
-
 const addRemoveListener = (book) => {
   document.getElementById(`remove-${book.id}`).addEventListener('click', (e) => {
     e.preventDefault();
     book.removeBook();
-    toggleEmpty();
+    localStorage.setItem('library', JSON.stringify(library));
+    if (!library.length) {
+      displayEmpty();
+    }
     const bookID = document.getElementById(`book-${book.id}`);
     if (bookID.parentNode) {
       bookID.parentNode.removeChild(bookID);
@@ -62,17 +47,24 @@ const appendBook = (book) => {
   bookElement.className = 'book';
   bookElement.innerHTML = `
     <p>${book.title} by ${book.author}</p>
-    <button id="remove-${book.id}" class="remove">Remove</button>
+    <button id="remove-${book.id}" class="remove"><i class="fa-solid fa-trash-can"></i></button>
   `;
 
   booksSection.appendChild(bookElement);
-  toggleEmpty();
+  if (library.length === 1) {
+    displayEmpty();
+  }
 };
 
-library.forEach((book) => {
-  appendBook(book);
-  addRemoveListener(book);
-});
+if (localStorage.getItem('library')) {
+  const libraryData = JSON.parse(localStorage.getItem('library'));
+  libraryData.forEach((book) => {
+    const newBook = new Book(book.id, book.title, book.author);
+    library.push(newBook);
+    appendBook(newBook);
+    addRemoveListener(newBook);
+  });
+}
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
@@ -80,9 +72,10 @@ form.addEventListener('submit', (e) => {
   const bookAuthor = document.getElementById('author');
   const book = new Book(uid(), bookTitle.value, bookAuthor.value);
   book.addBook();
+  localStorage.setItem('library', JSON.stringify(library));
   appendBook(book);
   addRemoveListener(book);
-  localStorage.removeItem('data');
+  localStorage.removeItem('formData');
   bookAuthor.value = '';
   bookTitle.value = '';
 });
