@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0 0 100px;
+}
+
+#awesomebookstitle {
+  text-align: center;
+}
+
+#booklisttitle {
+  text-align: center;
+}
+
+#addnewbooktitle {
+  text-align: center;
+  font-size: 14px;
+}
+
+#library {
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  border-radius: 16px;
+  padding: 25px 20px;
+}
+
+.empty {
+  justify-content: space-around;
+  align-items: center;
+}
+
+.show {
+  display: flex;
+}
+
+.hide {
+  display: none;
+}
+
+.remove {
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+hr {
+  width: 20%;
+  margin-bottom: 30px;
+}
+
+form {
+  width: 30%;
+  margin: 0 auto;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
