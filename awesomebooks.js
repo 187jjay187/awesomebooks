@@ -16,7 +16,7 @@ class Book {
     this.title = title;
     this.author = author;
   }
- 
+  
   addBook = () => {
     library.push(this);
   };
