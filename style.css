@@ -38,6 +38,16 @@ body {
   align-items: center;
 }
 
+.book1 {
+  display: flex;
+  justify-content: center;
+}
+
+.booktext {
+  display: flex;
+  justify-content: center;
+}
+
 .show {
   display: flex;
 }

@@ -20,8 +20,9 @@ class Book {
   addBook = () => {
     library.push(this);
   };
+
   removeBook = () => {
-   library = library.filter((book) => book.id !== this.id);
+    library = library.filter((book) => book.id !== this.id);
   };
 }
 
