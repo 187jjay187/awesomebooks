@@ -88,9 +88,11 @@ input {
 #add-btn {
   background-color: goldenrod;
 }
+
 #add-btn:hover {
   background-color: beige;
 }
+
 #add-btn:active {
   background-color: orange;
 }
