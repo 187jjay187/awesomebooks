@@ -16,7 +16,7 @@ class Book {
     this.title = title;
     this.author = author;
   }
-
+ 
   addBook = () => {
     library.push(this);
   };
@@ -46,8 +46,8 @@ const appendBook = (book) => {
   bookElement.id = `book-${book.id}`;
   bookElement.className = 'book';
   bookElement.innerHTML = `
-    <p>${book.title} by ${book.author}</p>
-    <button id="remove-${book.id}" class="remove"><i class="fa-solid fa-trash-can"></i></button>
+    <p class="booktext">${book.title} by ${book.author}</p>
+    <button id="remove-${book.id}" class="remove"><i class="fa-solid fa-trash-can"></i> remove</button>
   `;
 
   booksSection.appendChild(bookElement);
