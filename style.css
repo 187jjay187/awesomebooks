@@ -5,6 +5,11 @@
 body {
   margin: 0;
   padding: 0 0 100px;
+  background-color: azure;
+}
+
+.bk {
+  color: green;
 }
 
 #awesomebookstitle {
@@ -17,7 +22,7 @@ body {
 
 #addnewbooktitle {
   text-align: center;
-  font-size: 14px;
+  font-size: 40px;
 }
 
 #library {
@@ -31,6 +36,16 @@ body {
 .empty {
   justify-content: space-around;
   align-items: center;
+}
+
+.book1 {
+  display: flex;
+  justify-content: center;
+}
+
+.booktext {
+  display: flex;
+  justify-content: center;
 }
 
 .show {
@@ -61,4 +76,23 @@ input {
   width: 100%;
   padding: 10px;
   margin-bottom: 20px;
+}
+
+.book {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#add-btn {
+  background-color: goldenrod;
+}
+
+#add-btn:hover {
+  background-color: beige;
+}
+
+#add-btn:active {
+  background-color: orange;
 }
