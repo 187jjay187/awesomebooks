@@ -87,19 +87,19 @@ const listBody = document.querySelector('.empty hide');
 const formBody = document.getElementById('form-id');
 const contactBody = document.querySelector('.contact-class');
 
-listElement.addEventListener('click', (event) => {
+listElement.addEventListener('click', () => {
   listBody.style.display = 'block';
   formBody.style.display = 'none';
   contactBody.style.display = 'none';
 });
 
-formElement.addEventListener('click', (event) => {
+formElement.addEventListener('click', () => {
   formBody.style.display = 'block';
   listBody.style.display = 'none';
   contactBody.style.display = 'none';
 });
 
-contactElement.addEventListener('click', (event) => {
+contactElement.addEventListener('click', () => {
   contactBody.style.display = 'flex';
   listBody.style.display = 'none';
   formBody.style.display = 'none';

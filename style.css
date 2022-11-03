@@ -41,11 +41,11 @@ a {
   color: white;
 }
 
- #booklisttitle {
+#booklisttitle {
   text-align: center;
 }
 
- #addnewbooktitle {
+#addnewbooktitle {
   text-align: center;
 }
 
@@ -127,20 +127,19 @@ input {
   font-size: 2em;
   font-weight: bold;
   list-style: none;
-  
 }
 
 .hide-contact {
   display: none;
-} 
+}
 
- .hide-form {
+.hide-form {
   display: none;
-} 
+}
 
- .hide-list {
+.hide-list {
   display: none;
-} 
+}
 
 footer {
   text-align: center;
