@@ -137,6 +137,29 @@ input {
   display: none;
 } */
 
- 
+.hide-contact {
+  display: none;
+} 
 
+ .hide-form {
+  display: none;
+} 
 
+ .hide-list {
+  display: none;
+} 
+
+footer {
+  text-align: center;
+  line-height: 25px;
+  color: white;
+  background-color: green;
+  position: absolute;
+  width: 100vw;
+  height: 50px;
+}
+
+footer p {
+  font-size: 1em;
+  font-weight: bold;
+}
