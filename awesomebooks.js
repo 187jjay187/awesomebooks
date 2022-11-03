@@ -79,3 +79,28 @@ form.addEventListener('submit', (e) => {
   bookAuthor.value = '';
   bookTitle.value = '';
 });
+
+const listElement = document.getElementById('booklisttitle');
+const formElement = document.getElementById('addnewbooktitle');
+const contactElement = document.getElementById('contactBtn');
+const listBody = document.querySelector('.empty hide');
+const formBody = document.getElementById('form-id');
+const contactBody = document.querySelector('.contact-class');
+
+listElement.addEventListener('click', () => {
+  listBody.style.display = 'block';
+  formBody.style.display = 'none';
+  contactBody.style.display = 'none';
+});
+
+formElement.addEventListener('click', () => {
+  formBody.style.display = 'block';
+  listBody.style.display = 'none';
+  contactBody.style.display = 'none';
+});
+
+contactElement.addEventListener('click', () => {
+  contactBody.style.display = 'flex';
+  listBody.style.display = 'none';
+  formBody.style.display = 'none';
+});

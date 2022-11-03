@@ -11,23 +11,44 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <!-- header section starts here -->
+   
+  <header>
+    <nav class="navbar">
+      <h1 class="awesomebookslogo" id="awesomebookstitle"> <i class="fas fa-book-open"></i> Awesome <span class="bk ">Books</span> </h1>
+      <ul class="navbar-ul">
+        <li><a id="booklisttitle" href="index.html">List</a></li>
+        <li><a id="addnewbooktitle" href="addnewpage.html">Add New</a></li>
+        <li><a id="contactBtn" href="contactpage.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <!-- header section ends here -->
+  
+  <!-- library section starts here -->
+  
     <section>
-  <h1 id="awesomebookstitle"> <i class="fas fa-book-open"></i> Awesome <span class="bk ">Books</span> </h1>
   <div id="library">
     <div class="empty hide" id="empty-id">
-      <i class="book1 fa-solid fa-book"></i>
-      <h2 id="booklisttitle">Book list</h2>
-      <i class="book1 fa-solid fa-book"></i>
+      <!-- <i class="book1 fa-solid fa-book"></i> -->
+      <h2 id="booklisttitle">ALL AWESOME BOOKS</h2>
+      <!-- <i class="book1 fa-solid fa-book"></i> -->
     </div>
   </div>
-  <hr>
-  <h2 id="addnewbooktitle">Add a new Book</h2>
-  <form action="#" id="form-id">
-    <input type="text" name="title" id="title" placeholder="Title" required>
-    <input type="text" name="author" id="author" placeholder="Author" required>
-    <button id="add-btn" type="submit" >Add</button>
-  </form>
-    </section>
+  </section>
+  
+  <!-- library section ends here -->
+  
+  <!-- footer section starts here -->
+  
+    <footer>
+      <p>COPYRIGHT 2022, JAY-RACHEL-RIYANA SINGLE-PAGE APPLICATION </p>
+    </footer>
+    
+  <!-- footer section ends here -->
+  
   <script src="./awesomebooks.js"></script>
   <script src="./localStorage.js"></script>
 </body>
