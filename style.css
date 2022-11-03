@@ -126,16 +126,9 @@ input {
 #contact-section ul {
   font-size: 2em;
   font-weight: bold;
+  list-style: none;
+  
 }
-
-/* .form-class {
-  display: flex;
-  flex-direction: column;
-} */
-
-/* .contact-class {
-  display: none;
-} */
 
 .hide-contact {
   display: none;
