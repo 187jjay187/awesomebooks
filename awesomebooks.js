@@ -84,7 +84,7 @@ const listElement = document.getElementById('booklisttitle');
 const formElement = document.getElementById('addnewbooktitle');
 const contactElement = document.getElementById('contactBtn');
 const listBody = document.querySelector('.empty hide');
-const formBody = document.querySelector('.form-class');
+const formBody = document.getElementById('form-id');
 const contactBody = document.querySelector('.contact-class');
 
 listElement.addEventListener('click', (event) => {
