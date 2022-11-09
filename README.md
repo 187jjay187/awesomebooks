@@ -2,15 +2,17 @@
 
 # Awesome Books Project
 
-## Recent Fixes
+## Recent Changes
 
-- Fixed style linters errors
+- Fixed linters errors
+- added luxon time
+- used modules/ES6
 
 ## Built With
 
 - HTML
 - CSS
-- Javascript
+- Javascript (ES6)
 
 
 ## List Of Technologies
